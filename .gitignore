@@ -6,6 +6,7 @@ target/
 *.iml
 
 # 日志，测试，编译后的类文件
-log/
+logs/
+*.log
 test/
 .class
