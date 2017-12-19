@@ -11,5 +11,6 @@ public class TestJava {
     ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/spring-dao.xml");
     DataSource dataSource = (DataSource) context.getBean("dataSource");
     System.out.println("数据源: " + dataSource);
+    System.out.println("测试提交");
   }
 }
