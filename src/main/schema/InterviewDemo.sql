@@ -1,9 +1,13 @@
 # region 数据库的建立/修改脚本
 
+# 面试题目数据库
 CREATE DATABASE interview_demo;
 USE interview_demo;
-USE interview_demo_test;
-# 创建面试题目表
+
+# 用户登录信息表
+
+
+# 面试题目表
 CREATE TABLE topic (
   id              BIGINT        NOT NULL
   COMMENT '问题的 id',
