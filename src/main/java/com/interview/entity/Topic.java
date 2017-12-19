@@ -1,6 +1,7 @@
 package com.interview.entity;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 /**
  * 面试题目实体类.
@@ -15,6 +16,16 @@ public class Topic implements Serializable {
   private String referenceAnswer;
   private java.sql.Timestamp updateTime;
 
+  public Topic() {
+  }
+
+  public Topic(Long id, Long typeId, String title, String referenceAnswer, Timestamp updateTime) {
+    this.id = id;
+    this.typeId = typeId;
+    this.title = title;
+    this.referenceAnswer = referenceAnswer;
+    this.updateTime = updateTime;
+  }
 
   public Long getId() {
     return id;
