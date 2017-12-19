@@ -8,5 +8,4 @@ target/
 # 日志，测试，编译后的类文件
 logs/
 *.log
-test/
 .class
