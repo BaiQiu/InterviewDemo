@@ -8,34 +8,56 @@ import java.io.Serializable;
  * @author rxliuli
  */
 public class Topic implements Serializable {
-  /**
-   * 问题的 id.
-   */
+
   private Long id;
-
-  /**
-   * 题目类型 id.
-   */
   private Long typeId;
-
-  /**
-   * 题目的标题.
-   */
   private String title;
-
-  /**
-   * 题目的参考答案.
-   */
   private String referenceAnswer;
+  private java.sql.Timestamp updateTime;
 
-  public Topic() {
+
+  public Long getId() {
+    return id;
   }
 
-  public Topic(Long id, Long typeId, String title, String referenceAnswer) {
-
+  public void setId(Long id) {
     this.id = id;
+  }
+
+
+  public Long getTypeId() {
+    return typeId;
+  }
+
+  public void setTypeId(Long typeId) {
     this.typeId = typeId;
+  }
+
+
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
     this.title = title;
+  }
+
+
+  public String getReferenceAnswer() {
+    return referenceAnswer;
+  }
+
+  public void setReferenceAnswer(String referenceAnswer) {
     this.referenceAnswer = referenceAnswer;
   }
+
+
+  public java.sql.Timestamp getUpdateTime() {
+    return updateTime;
+  }
+
+  public void setUpdateTime(java.sql.Timestamp updateTime) {
+    this.updateTime = updateTime;
+  }
+
 }
