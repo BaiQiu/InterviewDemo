@@ -1,5 +1,17 @@
+/*通用*/
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+}
+body {
+  margin: 0;
+}
+
+
 .body_T_tiao{
-  height: 150px;
+  line-height: 10px;
   width: 1500px;
   background-color: #c6c6c6;
   flex-direction: row;
@@ -7,7 +19,7 @@
 }
 
 .body_T_tiao span{
-  font-size: 30px;
-  text-align: center;
+  font-size: 40px;
+  margin: 50px 20px;
 
 }
