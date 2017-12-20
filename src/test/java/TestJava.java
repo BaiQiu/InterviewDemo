@@ -1,5 +1,3 @@
-package com.interview.test;
-
 import com.interview.dao.TopicMapper;
 import com.interview.entity.Topic;
 import com.interview.util.SnowflakeIdUtil;
