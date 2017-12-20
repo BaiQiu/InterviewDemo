@@ -14,12 +14,21 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * @author rxliuli
  */
-public class TestJava {
-  public static void main(String[] args) throws IOException {
+public final class TestJava {
+  private TestJava() {
+  }
+
+  /**
+   * 测试方法
+   *
+   * @param args 一些参数
+   */
+  public static void main(String[] args) {
     //读取文件的全部内容
     String result = StringUtils.trim(readerFile("src/main/schema/interviewList.txt"));
 
@@ -35,22 +44,19 @@ public class TestJava {
     ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/spring-dao.xml", "classpath:spring/spring-service.xml");
     TopicMapper topicMapper = context.getBean(TopicMapper.class);
     final long typeId = SnowflakeIdUtil.getId();
-    list.stream()
-        .forEach(string -> {
-          //获取换行的位置
-          int i = StringUtils.indexOf(string, "\n");
-          //截取标题和内容
-          String title = StringUtils.substring(string, 0, i).trim();
-          String content = StringUtils.substring(string, i).trim();
-          long id = SnowflakeIdUtil.getId();
-          Topic topic = new Topic(id, typeId, title, content);
-          int num = topicMapper.insert(topic);
-          System.out.println(num + "\n");
-        });
+    //将所有面试题映射成 Topic 实体列表
+    Stream<Topic> topicStream = list.stream()
+      .map(string -> {
+        //获取换行的位置
+        int i = StringUtils.indexOf(string, "\n");
+        //截取标题和内容
+        String title = StringUtils.substring(string, 0, i).trim();
+        String content = StringUtils.substring(string, i).trim();
+        long id = SnowflakeIdUtil.getId();
+        return new Topic(id, typeId, title, content, null);
+      });
 
-    System.out.println(list.size());
-
-    System.out.println(SnowflakeIdUtil.getId());
+    topicStream.forEach(topicMapper::insert);
   }
 
   /**
