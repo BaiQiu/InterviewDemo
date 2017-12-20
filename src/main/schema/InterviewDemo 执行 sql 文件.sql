@@ -109,7 +109,7 @@ CREATE TABLE topic_status (
   COMMENT '这道题目得到多少分'
 )
   COMMENT '用户考试题目状态';
-DATABASE/94008cf3-67d0-44b6-945d-061c73d45357.SCHEMA:interview_demo
+
 # 查询一个用户一次考试所有题目以及对错
 SELECT ui.realname AS 'realname'
 FROM topic_status ts
