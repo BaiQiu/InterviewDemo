@@ -1,0 +1,233 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: url(/statics/background/images/other/body.jpg) repeat;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/**
+美化查询搜索框
+ */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/**
+设置from样式
+ */
+.form-wrapper {
+  width: 450px;
+  padding: 15px;
+  margin: 150px auto 50px auto;
+  background: #444444;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+
+/**
+设置text input样式
+ */
+.form-wrapper input {
+  width: 330px;
+  height: 20px;
+  padding: 10px 5px;
+  float: left;
+  font: bold 15px 'trebuchet MS', 'Tahoma';
+  border: 0;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+}
+
+.form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/**
+设置submit button样式
+ */
+.form-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  font: bold 15px/40px 'trebuchet MS', 'Tahoma';
+  color: #fff;
+  text-transform: uppercase;
+  background: #9d9d9d;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.form-wrapper button:hover {
+  background: #9d9d9d;
+}
+
+.form-wrapper button:active,
+.form-wrapper button:focus {
+  background: #9d9d9d;
+  outline: 0;
+}
+
+.form-wrapper button:before { /* left arrow */
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #9d9d9d transparent;
+  top: 12px;
+  left: -6px;
+}
+
+.form-wrapper button:hover:before {
+  border-right-color: #9d9d9d;
+}
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before {
+  border-right-color: #9d9d9d;
+}
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}
+
+/**
+欢迎页
+ */
+.welcome {
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+/**
+美化表格
+ */
+#container {
+  padding-top: 20px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 1px 5px rgba(242, 242, 242, 0.1);
+  box-shadow: 0 2px 1px 5px rgba(242, 242, 242, 0.1);
+}
+
+.zebra {
+  border: 1px solid #555;
+}
+
+.zebra td {
+  border-left: 1px solid #555;
+  border-top: 1px solid #555;
+  padding: 10px;
+  text-align: left;
+}
+
+.zebra th, .zebra th:hover {
+  border-left: 1px solid #555;
+  border-bottom: 1px solid #828282;
+  padding: 20px;
+  background-color: #151515 !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#404040)) !important;
+  background-image: -webkit-linear-gradient(top, #151515, #404040) !important;
+  background-image: -moz-linear-gradient(top, #151515, #404040) !important;
+  background-image: -ms-linear-gradient(top, #151515, #404040) !important;
+  background-image: -o-linear-gradient(top, #151515, #404040) !important;
+  background-image: linear-gradient(top, #151515, #404040) !important;
+  color: #fff !important;
+  font-weight: normal;
+}
+
+.zebra tbody tr:nth-child(even) {
+  background: #000000 !important;
+  color: #fff;
+}
+
+.zebra tr:hover * {
+  background: #eeeeee;
+  color: #000;
+}
+
+.zebra tr {
+  background: #404040;
+  color: #fff;
+}
+/**
+分页按钮显示
+ */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #404040;
+  color: #fff;
+  background-color: #404040;
+  margin: 20px 20px 0 0;
+}
+
+.box {
+  width: 800px;
+  margin: 100px auto 0;
+  height: 34px;
+}
+
+.page {
+  width: 600px;
+}
+
+.info {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.fl {
+  float: left;
+}
