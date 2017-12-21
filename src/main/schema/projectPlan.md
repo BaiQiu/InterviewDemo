@@ -46,3 +46,4 @@
 - 类的成员变量名采用驼峰命名法，类名采用首字母大写的驼峰命名法，常量则全大写以下划线进行分割.
 - Dao 层的类名由实体类名+Mapper 命名，全部放置在 `src/main/java/**/dao/` 包下面，而对应的 mybatis 映射文件则放置在 `src/main/resources/mapper/` 文件夹下，必须要和 Dao 层的数据访问接口一一对应。
 - Service 和 Controller 这是根据需求命名，但还是要有后缀 Service 和 Controller，实现类则在接口的基础上再加上 Impl 后缀作为区分，并要在其子包 impl
+- 避免修改 idea 的配置(例如随意拖拽窗口位置子类)，尤其而且是看不懂的配置.
