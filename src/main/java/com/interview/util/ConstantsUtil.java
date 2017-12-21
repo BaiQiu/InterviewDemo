@@ -5,7 +5,7 @@ package com.interview.util;
  *
  * @author wuhaiyuan
  */
-public final class Constants {
+public final class ConstantsUtil {
   /**
    * 保存用户的session字段
    */
@@ -13,7 +13,7 @@ public final class Constants {
 
   public static final String ADMIN_SESSION = "ADMIN_SESSION";
 
-  private Constants() {
+  private ConstantsUtil() {
   }
 
 

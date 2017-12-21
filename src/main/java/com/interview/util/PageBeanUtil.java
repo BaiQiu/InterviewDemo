@@ -13,7 +13,7 @@ import java.util.List;
  * @param <T> 类型
  * @author rxliuli
  */
-public class PageBean<T> implements Serializable {
+public class PageBeanUtil<T> implements Serializable {
   private static final long serialVersionUID = 8656597559014685635L;
 
   /**
@@ -47,7 +47,7 @@ public class PageBean<T> implements Serializable {
    *
    * @param list page结果
    */
-  public PageBean(List<T> list) {
+  public PageBeanUtil(List<T> list) {
     if (list instanceof Page) {
       Page<T> page = (Page<T>) list;
       this.pageNum = page.getPageNum();
@@ -107,15 +107,5 @@ public class PageBean<T> implements Serializable {
     this.size = size;
   }
 
-  @Override
-  public String toString() {
-    return "PageBean{" +
-        "total=" + total +
-        ", list=" + list +
-        ", pageNum=" + pageNum +
-        ", pageSize=" + pageSize +
-        ", pages=" + pages +
-        ", size=" + size +
-        '}';
-  }
+
 }
