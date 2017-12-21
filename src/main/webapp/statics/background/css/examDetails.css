@@ -1,0 +1,92 @@
+/*通用*/
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.body_T_tiao{
+  line-height: 10px;
+  width: 1500px;
+  background-color: #c6c6c6;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.body_T_tiao span{
+  font-size: 40px;
+margin-right: 130px;
+  font-weight: bolder;
+  color: #23527c;
+}
+
+hr{
+  background-color: #555555;
+  height: 20px;
+}
+
+.body_T_ming{
+
+  font-weight: bold;
+  font-size: 20px;
+  color: #31708f;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#body_Z_kuang{
+  background-color: #ebccd1;
+  border-style: solid ;
+  border-radius: 20px;
+  border-color: #E3E3E3;
+  width: 650px; height: 50px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+#body_Z_an{
+  background-color: #999999;
+  border-style: solid ;
+  border-radius: 10px;
+  border-color: #E3E3E3;
+  width: 200px; height: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.body_T_wo{
+  margin-top: -300px;
+}
+
+.body_T_wei{
+  font-size: 20px;
+
+  width: 1000px;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+#wei_w_mi{
+
+  float:left;
+
+  width:100px;
+
+  height:100px;
+
+  background-color:#000;
+
+  shape-outside:polygon(100px 0,100px 80px,0px 80px);
+
+  -webkit-clip-path:polygon(100px 0,100px 80px,0px 80px);
+
+}

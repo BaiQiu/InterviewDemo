@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>查询学生成绩</title>
+
+  <link rel="stylesheet" href="/statics/background/css/studentResult.css">
+  <script src="/statics/foreground/js/studentResult.js"></script>
+
+</head>
+<body>
+<hr>
+
+<div class="body_T_tiao">
+  <table style="width: 1500px">
+    <tr>
+      <td><img src="/statics/background/images/examDetails/timg.jpg" height="150" width="200"/></td>
+      <td>
+        <span>
+        查询学生成绩
+      </span>
+      </td>
+      <td><div id="myclock"></div></td>
+    </tr>
+  </table>
+</div>
+
+<hr/>
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <img src="/statics/background/images/studentResult/btin.jpg" height="300px" width="400px">
+            <img style="margin-top: 20px" src="/statics/background/images/studentResult/ctin.jpg" height="300px" width="400px">
+            <img style="margin-top: 30px" src="/statics/background/images/studentResult/dtin.jpg" height="500px" width="400px">
+
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table class="body_T_wo">
+        <tr>
+          <td>
+            <span class="body_T_ming">请输入姓名：</span>
+          </td>
+          <td>
+            <input type="text" name="username" id="body_Z_kuang" title=""/>
+          </td>
+          <td>
+            <input type="submit" name="enquiries" value="查　询" id="body_Z_an">
+          </td>
+        </tr>
+      </table>
+
+      <table border="1" class="body_T_wei">
+        <tr>
+          <td id="wei_w_mi"></td>
+          <td>姓名：</td>
+          <td>张三</td>
+          <td>男</td>
+        </tr>
+        <tr>
+
+          <td>试题：</td>
+
+          <td>老鼠会飞？？</td>
+          <td colspan="2">×</td>
+        </tr>
+        <tr>
+
+          <td>解析：</td>
+          <td>老鼠会跑</td>
+          <td>您的答案错误</td>
+          <td>√</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
