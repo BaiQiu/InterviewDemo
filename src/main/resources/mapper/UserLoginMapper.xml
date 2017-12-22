@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.interview.dao.UserLoginMapper">
+  <insert id="insert">
+    INSERT INTO user_login (id, username, password, email)
+    VALUES (#{id}, #{username}, #{password}, #{email});
+  </insert>
+  <select id="listByAll" resultType="com.interview.entity.UserLogin">
+    SELECT *
+    FROM user_login
+  </select>
+</mapper>
