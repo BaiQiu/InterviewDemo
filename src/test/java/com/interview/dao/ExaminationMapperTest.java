@@ -37,4 +37,11 @@ public class ExaminationMapperTest extends BaseTestNGUtil {
     int num = examinationMapper.insert(examination);
     assertThat(num).isEqualTo(1);
   }
+
+  @Test
+  public void testListByLimit() throws Exception {
+    List<Examination> examinationList = examinationMapper.listByLimit(3);
+    assertThat(examinationList)
+      .hasSize(3);
+  }
 }
