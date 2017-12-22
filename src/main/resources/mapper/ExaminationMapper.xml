@@ -7,4 +7,10 @@
     INSERT INTO examination (id, name, start_time, end_time, topic_ids)
     VALUES (#{id}, #{name}, #{startTime}, #{endTime}, #{topicIds});
   </insert>
+  <select id="listByLimit" resultType="com.interview.entity.Examination">
+    SELECT *
+    FROM examination
+    ORDER BY id DESC
+    LIMIT #{examinationNumber}
+  </select>
 </mapper>

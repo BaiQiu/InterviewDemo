@@ -1,6 +1,9 @@
 package com.interview.dao;
 
 import com.interview.entity.Examination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * 考试相关数据访问接口.
@@ -15,4 +18,12 @@ public interface ExaminationMapper {
    * @return 受影响行数
    */
   int insert(Examination examination);
+
+  /**
+   * 查询最近的考试.
+   *
+   * @param examinationNumber 指定要查看的最近考试的数量
+   * @return 要查看的最近考试
+   */
+  List<Examination> listByLimit(@Param("examinationNumber") int examinationNumber);
 }
