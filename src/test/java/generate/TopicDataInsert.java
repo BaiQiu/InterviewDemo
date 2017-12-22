@@ -1,3 +1,5 @@
+package generate;
+
 import com.interview.dao.TopicMapper;
 import com.interview.entity.Topic;
 import com.interview.util.SnowflakeIdUtil;
@@ -17,8 +19,8 @@ import java.util.stream.Stream;
 /**
  * @author rxliuli
  */
-public final class TestJava {
-  private TestJava() {
+public final class TopicDataInsert {
+  private TopicDataInsert() {
   }
 
   /**
