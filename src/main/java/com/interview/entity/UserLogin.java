@@ -14,6 +14,16 @@ public class UserLogin implements Serializable {
   private String password;
   private String email;
 
+  public UserLogin() {
+  }
+
+  public UserLogin(Long id, String username, String password, String email) {
+
+    this.id = id;
+    this.username = username;
+    this.password = password;
+    this.email = email;
+  }
 
   public Long getId() {
     return id;
