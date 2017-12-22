@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.interview.dao.ExaminationMapper">
+  <insert id="insert">
+    INSERT INTO examination (id, name, start_time, end_time, topic_ids)
+    VALUES (#{id}, #{name}, #{startTime}, #{endTime}, #{topicIds});
+  </insert>
+</mapper>
