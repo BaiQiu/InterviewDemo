@@ -10,4 +10,15 @@
     FROM result
     WHERE user_login_id = #{userId}
   </select>
+  <select id="listByUserIdAndExaminations" parameterType="map" resultType="com.interview.entity.Result">
+    SELECT *
+    FROM result
+    WHERE user_login_id = #{userId} AND examination_id IN
+    <foreach collection="examinationIdList" item="examinationId"
+             open="(" separator="," close=")">
+      #{examinationId}
+    </foreach>
+    ORDER BY id DESC
+    LIMIT #{resultNumber}
+  </select>
 </mapper>
