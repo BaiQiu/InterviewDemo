@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import util.BaseTestNGUtil;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -24,5 +25,12 @@ public class TopicMapperTest extends BaseTestNGUtil {
     Topic topic = new Topic(SnowflakeIdUtil.getId(), typeId, "问题的标题", "参考答案", null);
     int i = topicMapper.insert(topic);
     assertThat(i).isEqualTo(1);
+  }
+
+  @Test
+  public void testListByRandom() throws Exception {
+    List<Long> topicIdList = topicMapper.listByRandom(20);
+    log(topicIdList);
+    assertThat(topicIdList).hasSize(20);
   }
 }
