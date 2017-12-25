@@ -41,6 +41,6 @@
 
   <!--配置首页-->
   <welcome-file-list>
-    <welcome-file>/statics/background/html/login.html</welcome-file>
+    <welcome-file>/statics/foreground/html/userList.html</welcome-file>
   </welcome-file-list>
 </web-app>

@@ -4,9 +4,208 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Title</title>
+  <title>操作面试题目</title>
+  <script src="/statics/commons/js/jquery.min.js"></script>
+  <script src="/statics/commons/js/popper.min.js"></script>
+  <link href="/statics/commons/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="/statics/commons/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/statics/background/css/jquery.tableui.css">
+  <script src="/statics/background/js/jquery.js"></script>
+  <script src="/statics/background/js/jquery.tableui.js"></script>
+  <script src="/statics/background/js/topicOperation.js"></script>
+  <link rel="stylesheet" href="/statics/background/css/topicOperation.css">
+  <link rel="stylesheet" href="/statics/background/css/jquery.pagination.css">
+
+
+
 </head>
 <body>
+<h1 style="text-align: center ">欢迎来到题目操作页面</h1>
+<table class="table_solid" border="0" cellspacing="0">
 
+  <tbody>
+  <tr class="evenRow">
+    <th>问题的 id</th>
+    <th>题目类型 id</th>
+    <th>题目的标题</th>
+    <th>题目的参考答案</th>
+    <th>最后更新时间</th>
+    <th>操作</th>
+  </tr>
+
+  <tr class="oddRow">
+    <td>1</td>
+    <td>a1</td>
+    <td>jQuery 是一个“写的更少，但做的更多”的轻量级 JavaScript 库。</td>
+    <td>jQuery 是一个“写的更少，但做的更多”的轻量级 JavaScript 库。</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+
+  <tr class="evenRow">
+    <td>2</td>
+    <td>a2</td>
+    <td>jQuery是一个兼容多浏览器的javascript框架</td>
+    <td>jQuery是一个兼容多浏览器的javascript框架</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+
+  <tr class="oddRow">
+    <td>3</td>
+    <td>a3</td>
+    <td>jQuery在2006年1月由美国人John Resig在纽约的barcamp发布</td>
+    <td>jQuery在2006年1月由美国人John Resig在纽约的barcamp发布</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+
+  <tr class="evenRow">
+    <td>4</td>
+    <td>a4</td>
+    <td>jQuery的语法设计可以使开发者更加便捷</td>
+    <td>jQuery的语法设计可以使开发者更加便捷</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+
+  <tr class="oddRow">
+    <td>5</td>
+    <td>a5</td>
+    <td>jQuery提供API让开发者编写插件</td>
+    <td>jQuery提供API让开发者编写插件</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+
+  <tr class="evenRow">
+    <td>6</td>
+    <td>a6</td>
+    <td>使用jQuery.Deferred还可以开发自己的延迟对象</td>
+    <td>使用jQuery.Deferred还可以开发自己的延迟对象</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+
+  <tr class="oddRow">
+    <td>7</td>
+    <td>a7</td>
+    <td>提升了事件委派时的性能有了大幅度的提升，尤其是在IE7下</td>
+    <td>提升了事件委派时的性能有了大幅度的提升，尤其是在IE7下</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+
+  <tr class="evenRow">
+    <td>8</td>
+    <td>a8</td>
+    <td>jQuery 1.7.1不能正确地设置IE7中克隆元素的tabindex属性</td>
+    <td>jQuery 1.7.1不能正确地设置IE7中克隆元素的tabindex属性</td>
+    <td>2017-12-12</td>
+    <td>
+      <input type="button" value="新增">
+      <input type="button" value="编辑">
+      <input type="button" value="删除">
+    </td>
+  </tr>
+  </tbody>
+</table>
+<!--分页-->
+<div class="box">
+  <div id="pagination3" class="page fl">
+    <div class="ui-pagination-container"><a href="javascript:void(0);" class="ui-pagination-page-item active"
+                                            data-current="1">1</a><a href="javascript:void(0);"
+                                                                     class="ui-pagination-page-item"
+                                                                     data-current="2">2</a><a href="javascript:void(0);"
+                                                                                              class="ui-pagination-page-item"
+                                                                                              data-current="3">3</a><a
+      href="javascript:void(0);" class="ui-pagination-page-item" data-current="4">4</a><a href="javascript:void(0);"
+                                                                                          class="ui-pagination-page-item"
+                                                                                          data-current="5">5</a><a
+      href="javascript:void(0);" class="ui-pagination-page-item" data-current="6">6</a><a href="javascript:void(0);"
+                                                                                          class="ui-pagination-page-item"
+                                                                                          data-current="7">7</a><a
+      href="javascript:void(0);" class="ui-pagination-page-item" data-current="2">下一页</a><a href="javascript:void(0);"
+                                                                                            class="ui-pagination-page-item"
+                                                                                            data-current="16">尾页</a>
+    </div>
+  </div>
+  <div class="info fl">
+  </div>
+  <button id="getPage" class="btn">getPage</button>
+  <button id="setPage" class="btn">setPage</button>
+</div>
+<script>
+  $(function () {
+    $("#pagination3").pagination({
+      currentPage: 1,
+      totalPage: 16,
+      isShow: true,
+      count: 7,
+      homePageText: "首页",
+      endPageText: "尾页",
+      prevPageText: "上一页",
+      nextPageText: "下一页",
+      callback: function (current) {
+        $("#current3").text(current)
+      }
+    });
+
+    $("#getPage").on("click", function () {
+      var info = $("#pagination3").pagination("getPage");
+      alert("当前页数：" + info.current + ",总页数：" + info.total);
+    });
+
+    $("#setPage").on("click", function () {
+      $("#pagination3").pagination("setPage", 1, 10);
+    });
+  });
+</script>
+
+<div class="container">
+
+  <div id="exampleDemo" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>这是一个模态框标题</h3>
+        </div>
+        <div class="modal-body">
+          neirong
+        </div>
+      </div>
+    </div>
+  </div>
+  <p><a data-toggle="modal" href="#exampleDemo" class="btn btn-primary">发动演示模态框</a></p>
+</div>
 </body>
 </html>
+

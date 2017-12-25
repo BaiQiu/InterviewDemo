@@ -1,0 +1,48 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: url(/statics/background/images/other/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  color: #fff;
+  letter-spacing: 1px;
+}
+/**
+分页按钮显示
+ */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #404040;
+  color: #fff;
+  background-color: #404040;
+  margin: 20px 20px 0 0;
+}
+
+.box {
+  width: 800px;
+  margin: 100px auto 0;
+  height: 34px;
+}
+
+.page {
+  width: 600px;
+}
+
+.info {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.fl {
+  float: left;
+}
+
+
