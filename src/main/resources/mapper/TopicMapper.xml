@@ -14,4 +14,15 @@
     ORDER BY rand()
     LIMIT #{topicNumber}
   </select>
+
+  <update id="update">
+    UPDATE topic
+    SET title = #{title}, reference_answer = #{referenceAnswer}, update_time = #{updateTime}
+    WHERE id = #{id};
+  </update>
+
+  <delete id="delete">
+    DELETE FROM topic
+    WHERE id = #{id};
+  </delete>
 </mapper>
